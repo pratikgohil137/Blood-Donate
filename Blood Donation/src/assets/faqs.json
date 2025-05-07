@@ -1,0 +1,28 @@
+{
+  "faqs": [
+    {
+      "question": "Who can donate blood?",
+      "answer": "Generally, healthy individuals between 18 and 65 years old, weighing at least 50 kg, can donate blood. Some medical conditions and medications may affect eligibility."
+    },
+    {
+      "question": "How often can I donate blood?",
+      "answer": "You can donate whole blood every 3 months (for men) and every 4 months (for women). Plasma and platelet donations may have different intervals."
+    },
+    {
+      "question": "Is blood donation safe?",
+      "answer": "Yes! Blood donation is a safe process. A new, sterile needle is used for each donor and discarded after use."
+    },
+    {
+      "question": "What should I do before and after donating blood?",
+      "answer": "Before donating: Eat a healthy meal, drink plenty of water, and get enough rest. After donating: Rest for a few minutes, drink fluids, and avoid heavy exercise for the rest of the day."
+    },
+  {
+    "question": "Can I donate if I have a cold or flu?",
+    "answer": "No, you must be completely healthy and free from cold, flu, or any infection before donating blood."
+  },
+    {
+      "question": "Will donating blood make me weak?",
+      "answer": "No, your body quickly replenishes the donated blood. You might feel slightly tired, but drinking fluids and eating well will help you recover."
+    }
+  ]
+}

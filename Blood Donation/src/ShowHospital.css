@@ -1,0 +1,718 @@
+/* Hospital Section Container */
+.hospital-section {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #e12454;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Location Controls */
+.location-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-direction: column;
+}
+
+.use-location-btn {
+  background-color: #e12454;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 8px rgba(225, 36, 84, 0.2);
+}
+
+.use-location-btn:hover {
+  background-color: #d01142;
+}
+
+.use-location-btn:disabled {
+  background-color: #e87f9a;
+  cursor: not-allowed;
+}
+
+.location-error {
+  color: #e12454;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Filter Controls */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: #223a66;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.filter-group select {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.filter-group select:hover {
+  border-color: #e12454;
+  box-shadow: 0 3px 8px rgba(225, 36, 84, 0.1);
+}
+
+.filter-group select:focus {
+  border-color: #e12454;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(225, 36, 84, 0.15);
+}
+
+.filter-group select:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #ddd;
+  box-shadow: none;
+}
+
+/* Results Summary */
+.results-summary {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+  background-color: #f8f9fa;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.results-summary p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.results-summary strong {
+  color: #e12454;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+/* Hospital Table Styles */
+.hospital-table-container {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.hospital-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hospital-table th {
+  background-color: #223a66;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.hospital-table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.hospital-table th:last-child {
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.hospital-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.hospital-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hospital-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.directions-cell {
+  text-align: center;
+}
+
+.directions-link, 
+.get-location-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e12454;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.directions-link:hover, 
+.get-location-btn:hover {
+  transform: scale(1.1);
+  background-color: #d01142;
+}
+
+.no-results {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.load-more-btn,
+.show-less-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.load-more-btn {
+  background-color: #e12454;
+  color: white;
+  border: none;
+}
+
+.load-more-btn:hover {
+  background-color: #d01142;
+  transform: translateY(-2px);
+}
+
+.show-less-btn {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.show-less-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-group {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hospital-table th,
+  .hospital-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .directions-link, 
+  .get-location-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+  
+  .section-description {
+    font-size: 0.95rem;
+  }
+  
+  .use-location-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* API Key Warning */
+.api-key-warning {
+  background-color: #fff8e1;
+  border: 1px solid #ffecb3;
+  border-radius: 4px;
+  color: #856404;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.api-key-warning a {
+  color: #856404;
+  font-weight: bold;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+.api-key-warning a:hover {
+  text-decoration: none;
+}
+
+/* New Direction Button Styles */
+.directions-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e12454;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(225, 36, 84, 0.3);
+  position: relative;
+}
+
+.directions-icon-wrapper {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-icon {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  z-index: 1;
+}
+
+.heart-icon {
+  position: absolute;
+  font-size: 11px;
+  color: white;
+  top: -2px;
+  right: -2px;
+  z-index: 2;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+.directions-btn:hover {
+  background-color: #d01142;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(225, 36, 84, 0.4);
+}
+
+/* Directions Modal Styles */
+.directions-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.directions-modal {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.directions-modal h3 {
+  color: #223a66;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.hospital-address {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.travel-modes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.travel-mode-btn {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.travel-mode-btn i {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.travel-mode-btn.driving:hover {
+  background-color: #f0f8ff;
+  border-color: #b3d7ff;
+  color: #0366d6;
+}
+
+.travel-mode-btn.walking:hover {
+  background-color: #f0fff4;
+  border-color: #c6f6d5;
+  color: #38a169;
+}
+
+.travel-mode-btn.bicycling:hover {
+  background-color: #fffaf0;
+  border-color: #feebc8;
+  color: #dd6b20;
+}
+
+.travel-mode-btn.transit:hover {
+  background-color: #f9f0ff;
+  border-color: #e9d8fd;
+  color: #805ad5;
+}
+
+.directions-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.open-google-maps-btn {
+  background-color: #e12454;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.open-google-maps-btn:hover {
+  background-color: #d01142;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Additional responsive styles for modal */
+@media (max-width: 768px) {
+  .directions-btn {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .directions-icon-wrapper {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .location-icon {
+    font-size: 16px;
+  }
+  
+  .heart-icon {
+    font-size: 9px;
+    top: -2px;
+    right: -2px;
+  }
+
+  .travel-modes {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .directions-modal-footer {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .open-google-maps-btn, 
+  .cancel-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Blood Camps Section */
+.blood-camps-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  color: #d32f2f;
+  margin: 0;
+}
+
+.toggle-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-btn:hover {
+  background-color: #b71c1c;
+}
+
+.camps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.camp-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 1.5rem;
+  border-left: 4px solid #d32f2f;
+}
+
+.camp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.camp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.camp-header h3 {
+  margin: 0;
+  color: #d32f2f;
+  font-size: 1.2rem;
+}
+
+.camp-date-badge {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.camp-hospital {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.camp-time, .camp-location {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.camp-description {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.camp-contact {
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+}
+
+.no-camps-message {
+  text-align: center;
+  color: #777;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.view-all-camps {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.view-all-camps-btn {
+  display: inline-block;
+  background-color: #e12454;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.view-all-camps-btn:hover {
+  background-color: #d01142;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+} 

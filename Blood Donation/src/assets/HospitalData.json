@@ -1,0 +1,368 @@
+{
+  "hospitals": [
+    {
+      "name": "AIIMS Delhi",
+      "phone": "+91 11 2658 8500",
+      "address": "Ansari Nagar, New Delhi, India",
+      "district": "New Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "Safdarjung Hospital",
+      "phone": "+91 11 2673 5000",
+      "address": "Ring Road, New Delhi",
+      "district": "New Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "Safdarjung Hospital",
+      "phone": "+91 11 2673 5000",
+      "address": "Ring Road, New Delhi",
+      "district": "Rajkot",
+      "state": "Gujarat"
+    },
+    {
+      "name": "Apollo Hospital",
+      "phone": "+91 44 2829 0200",
+      "address": "Greams Road, Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu"
+    },
+    {
+      "name": "Fortis Hospital",
+      "phone": "+91 80 6621 4444",
+      "address": "Bannerghatta Road, Bangalore",
+      "district": "Bangalore",
+      "state": "Karnataka"
+    },
+    {
+      "name": "Narayana Health",
+      "phone": "+91 80 7122 2222",
+      "address": "Hosur Road, Bangalore",
+      "district": "Bangalore",
+      "state": "Karnataka"
+    },
+    {
+      "name": "Tata Memorial Hospital",
+      "phone": "+91 22 2417 7000",
+      "address": "Dr. E Borges Road, Mumbai",
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "Lilavati Hospital",
+      "phone": "+91 22 2675 1000",
+      "address": "Bandra West, Mumbai",
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "Christian Medical College",
+      "phone": "+91 416 228 1000",
+      "address": "Ida Scudder Road, Vellore",
+      "district": "Vellore",
+      "state": "Tamil Nadu"
+    },
+    {
+      "name": "PGIMER Chandigarh",
+      "phone": "+91 172 274 7585",
+      "address": "Sector 12, Chandigarh",
+      "district": "Chandigarh",
+      "state": "Chandigarh"
+    },
+    {
+      "name": "Max Super Speciality Hospital",
+      "phone": "+91 11 2651 5050",
+      "address": "Saket, New Delhi",
+      "district": "New Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "AIIMS Bhubaneswar",
+      "phone": "+91 674 247 6789",
+      "address": "Sijua, Patrapada, Bhubaneswar",
+      "district": "Bhubaneswar",
+      "state": "Odisha"
+    },
+    {
+      "name": "KIMS Hyderabad",
+      "phone": "+91 40 4488 5000",
+      "address": "Begumpet, Hyderabad",
+      "district": "Hyderabad",
+      "state": "Telangana"
+    },
+    {
+      "name": "Medanta Hospital",
+      "phone": "+91 124 414 1414",
+      "address": "Sector 38, Gurugram",
+      "district": "Gurugram",
+      "state": "Haryana"
+    },
+    {
+      "name": "Apollo Gleneagles Hospital",
+      "phone": "+91 33 2320 2122",
+      "address": "Canal Circular Road, Kolkata",
+      "district": "Kolkata",
+      "state": "West Bengal"
+    },
+    {
+      "name": "Batra Hospital",
+      "phone": "+91 11 2995 8500",
+      "address": "Tughlakabad Institutional Area, Delhi",
+      "district": "New Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "JIPMER Puducherry",
+      "phone": "+91 413 227 2380",
+      "address": "Gorimedu, Puducherry",
+      "district": "Puducherry",
+      "state": "Puducherry"
+    },
+    {
+      "name": "AIIMS Rishikesh",
+      "phone": "+91 135 246 2940",
+      "address": "Virbhadra Road, Rishikesh",
+      "district": "Rishikesh",
+      "state": "Uttarakhand"
+    },
+    {
+      "name": "AIIMS Bhopal",
+      "phone": "+91 755 267 2333",
+      "address": "Saket Nagar, Bhopal",
+      "district": "Bhopal",
+      "state": "Madhya Pradesh"
+    },
+    {
+      "name": "Seth GS Medical College",
+      "phone": "+91 22 2413 6051",
+      "address": "Parel, Mumbai",
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "RG Kar Medical College",
+      "phone": "+91 33 2555 7657",
+      "address": "Shyambazar, Kolkata",
+      "district": "Kolkata",
+      "state": "West Bengal"
+    },
+    {
+      "name": "King George Medical University",
+      "phone": "+91 522 225 8880",
+      "address": "Shah Mina Road, Lucknow",
+      "district": "Lucknow",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "name": "AIIMS Raipur",
+      "phone": "+91 771 257 3777",
+      "address": "G E Road, Raipur",
+      "district": "Raipur",
+      "state": "Chhattisgarh"
+    },
+    {
+      "name": "Indira Gandhi Medical College",
+      "phone": "+91 177 265 7194",
+      "address": "Lakkar Bazar, Shimla",
+      "district": "Shimla",
+      "state": "Himachal Pradesh"
+    },
+    {
+      "name": "Gandhi Medical College",
+      "phone": "+91 40 2750 2431",
+      "address": "Basheerbagh, Hyderabad",
+      "district": "Hyderabad",
+      "state": "Telangana"
+    },
+    {
+      "name": "Sri Ramachandra Medical Centre",
+      "phone": "+91 44 4592 8500",
+      "address": "Porur, Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu"
+    },
+    {
+      "name": "Manipal Hospital",
+      "phone": "+91 80 2502 4444",
+      "address": "Old Airport Road, Bangalore",
+      "district": "Bangalore",
+      "state": "Karnataka"
+    },
+    {
+      "name": "Ruby Hall Clinic",
+      "phone": "+91 20 6645 5100",
+      "address": "Sasoon Road, Pune",
+      "district": "Pune",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "Breach Candy Hospital",
+      "phone": "+91 22 2366 7788",
+      "address": "Bhulabhai Desai Road, Mumbai",
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "Amrita Institute of Medical Sciences",
+      "phone": "+91 484 285 1234",
+      "address": "Ponekkara, Kochi",
+      "district": "Ernakulam",
+      "state": "Kerala"
+    },
+    {
+      "name": "Dharamshila Narayana Superspeciality Hospital",
+      "phone": "+91 11 4306 6622",
+      "address": "Vasundhara Enclave, Delhi",
+      "district": "East Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "Lok Nayak Hospital",
+      "phone": "+91 11 2323 8900",
+      "address": "Jawaharlal Nehru Marg, Delhi",
+      "district": "Central Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "Dr. RML Hospital",
+      "phone": "+91 11 2340 0000",
+      "address": "Baba Kharak Singh Marg, Delhi",
+      "district": "New Delhi",
+      "state": "Delhi"
+    },
+    {
+      "name": "Holy Spirit Hospital",
+      "phone": "+91 22 2824 5512",
+      "address": "Mahakali Caves Road, Mumbai",
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "KEM Hospital",
+      "phone": "+91 22 2413 6051",
+      "address": "Parel, Mumbai",
+      "district": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences",
+      "phone": "+91 522 266 8700",
+      "address": "Rae Bareli Road, Lucknow",
+      "district": "Lucknow",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "name": "Dr. B. Borooah Cancer Institute",
+      "phone": "+91 361 247 2364",
+      "address": "Gopinath Nagar, Guwahati",
+      "district": "Guwahati",
+      "state": "Assam"
+    },
+    {
+      "name": "NEIGRIHMS Hospital",
+      "phone": "+91 364 253 8029",
+      "address": "Mawdiangdiang, Shillong",
+      "district": "Shillong",
+      "state": "Meghalaya"
+    },
+    {
+      "name": "GMCH Guwahati",
+      "phone": "+91 361 252 8417",
+      "address": "Bhangagarh, Guwahati",
+      "district": "Guwahati",
+      "state": "Assam"
+    },
+    {
+      "name": "Assam Medical College",
+      "phone": "+91 373 230 0080",
+      "address": "Barbari, Dibrugarh",
+      "district": "Dibrugarh",
+      "state": "Assam"
+    },
+    {
+      "name": "Rajendra Institute of Medical Sciences",
+      "phone": "+91 651 254 1533",
+      "address": "Bariatu, Ranchi",
+      "district": "Ranchi",
+      "state": "Jharkhand"
+    },
+    {
+      "name": "All India Institute of Medical Sciences, Patna",
+      "phone": "+91 612 245 2927",
+      "address": "Phulwari Sharif, Patna",
+      "district": "Patna",
+      "state": "Bihar"
+    },
+    {
+      "name": "Darbhanga Medical College",
+      "phone": "+91 6272 222 002",
+      "address": "Laheriasarai, Darbhanga",
+      "district": "Darbhanga",
+      "state": "Bihar"
+    },
+    {
+      "name": "Nalanda Medical College & Hospital",
+      "phone": "+91 612 235 4872",
+      "address": "Kankarbagh, Patna",
+      "district": "Patna",
+      "state": "Bihar"
+    },
+    {
+      "name": "Government Medical College, Kozhikode",
+      "phone": "+91 495 235 0215",
+      "address": "Medical College Campus, Kozhikode",
+      "district": "Kozhikode",
+      "state": "Kerala"
+    },
+    {
+      "name": "KIMS Hospital, Trivandrum",
+      "phone": "+91 471 304 1000",
+      "address": "Anayara, Trivandrum",
+      "district": "Thiruvananthapuram",
+      "state": "Kerala"
+    },
+    {
+      "name": "Govt. Stanley Medical College",
+      "phone": "+91 44 2528 5419",
+      "address": "Old Jail Road, Chennai",
+      "district": "Chennai",
+      "state": "Tamil Nadu"
+    },
+    {
+      "name": "Government Medical College, Nagpur",
+      "phone": "+91 712 270 1640",
+      "address": "Hanuman Nagar, Nagpur",
+      "district": "Nagpur",
+      "state": "Maharashtra"
+    },
+    {
+      "name": "Government Medical College, Bhavnagar",
+      "phone": "+91 712 270 1640",
+      "address": "Hanuman Nagar, Bhavnagar",
+      "district": "Bhavnagar",
+      "state": "Gujarat"
+    },
+    {
+      "name": "Sir T Hospital Bhavnagar",
+      "phone": "+91 712 270 1640",
+      "address": "Kalanala, Bhavnagar",
+      "district": "Bhavnagar",
+      "state": "Gujarat"
+    },
+    {
+      "name": "Government Medical College, Ahemdabad",
+      "phone": "+91 712 270 1640",
+      "address": "Busstand, Ahemdabad",
+      "district": "Ahemdabad",
+      "state": "Gujarat"
+    },
+    {
+      "name": "Pt. Bhagwat Dayal Sharma PGIMS",
+      "phone": "+91 1262 281 307",
+      "address": "Rohtak, Haryana",
+      "district": "Rohtak",
+      "state": "Haryana"
+    }
+  ]
+}

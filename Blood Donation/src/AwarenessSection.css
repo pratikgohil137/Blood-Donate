@@ -1,0 +1,216 @@
+/* Awareness Section Container */
+.awareness-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.awareness-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #e12454, #f5808c);
+}
+
+/* Section Headers */
+.awareness-section h2 {
+  font-size: 2.5rem;
+  color: #e12454;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.awareness-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #e12454;
+  border-radius: 3px;
+}
+
+.awareness-section h3 {
+  font-size: 1.75rem;
+  color: #223a66;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-weight: 600;
+}
+
+.awareness-section h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 25px;
+  background-color: #e12454;
+  border-radius: 4px;
+}
+
+/* Paragraph Styling */
+.awareness-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* List Styling */
+.awareness-section ul {
+  margin: 1.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.awareness-section li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.awareness-section li::before {
+  content: '•';
+  color: #e12454;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Myth Boxes */
+.myth-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.myth-box {
+  background-color: #fcf2f3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 5px solid #e12454;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myth-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(225, 36, 84, 0.2);
+}
+
+.myth-box p {
+  margin-bottom: 0.8rem;
+}
+
+.myth-box p:last-child {
+  margin-bottom: 0;
+}
+
+.myth-box strong {
+  color: #e12454;
+  font-weight: 600;
+}
+
+/* Quote Box */
+.quote-box {
+  background: linear-gradient(to right, #e12454, #ef5350);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin: 3rem 0 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-style: italic;
+  box-shadow: 0 6px 15px rgba(225, 36, 84, 0.3);
+  position: relative;
+}
+
+.quote-box::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-size: 6rem;
+  opacity: 0.15;
+  font-family: Georgia, serif;
+}
+
+.quote-box::after {
+  content: '"';
+  position: absolute;
+  bottom: -20px;
+  right: 25px;
+  font-size: 6rem;
+  opacity: 0.15;
+  font-family: Georgia, serif;
+}
+
+.quote-box br {
+  display: block;
+  content: "";
+  margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .awareness-section {
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .awareness-section h2 {
+    font-size: 2rem;
+  }
+
+  .awareness-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .myth-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-box {
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .awareness-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .awareness-section h3 {
+    font-size: 1.35rem;
+    padding-left: 1.2rem;
+  }
+
+  .awareness-section p, 
+  .awareness-section li {
+    font-size: 1rem;
+  }
+}

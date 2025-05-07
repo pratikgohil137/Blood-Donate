@@ -1,0 +1,377 @@
+/* Account Settings Container */
+.settings-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Settings Header */
+.settings-header {
+  background: linear-gradient(to right, #223a66, #31517d);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.settings-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.settings-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* Settings Content */
+.settings-content {
+  padding: 0;
+}
+
+/* Tabs Navigation */
+.settings-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  background-color: #f9f9f9;
+}
+
+.tab-button {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tab-button svg {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.tab-button.active {
+  color: #223a66;
+  font-weight: 600;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #223a66;
+}
+
+/* Tab Content */
+.settings-tab-content {
+  padding: 2rem;
+}
+
+.settings-tab-content h3 {
+  margin: 0 0 0.5rem;
+  color: #223a66;
+  font-size: 1.4rem;
+}
+
+.tab-description {
+  margin: 0 0 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.settings-form {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input.error {
+  border-color: #f44336;
+}
+
+.error-text {
+  color: #f44336;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* Password Tips */
+.password-tips {
+  background-color: #f4f9fd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #223a66;
+  margin-top: 2rem;
+}
+
+.password-tips h4 {
+  margin: 0 0 1rem;
+  color: #223a66;
+}
+
+.password-tips ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.password-tips li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Form Actions */
+.form-actions {
+  margin-top: 2rem;
+}
+
+/* Buttons */
+.primary-button {
+  background-color: #e12454;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.secondary-button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.danger-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.danger-button:disabled {
+  background-color: #ffcdd2;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: #777;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+/* Notification Styles */
+.notifications-section h4 {
+  margin: 2rem 0 1rem;
+  color: #223a66;
+  font-size: 1.1rem;
+}
+
+.notifications-section h4:first-child {
+  margin-top: 0;
+}
+
+.notification-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-text {
+  margin-left: 1rem;
+}
+
+.notification-text h5 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.notification-text p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #e12454;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+/* Account Management */
+.account-email,
+.data-export,
+.danger-zone {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.account-email h4,
+.data-export h4,
+.danger-zone h4 {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem;
+  color: #223a66;
+  font-size: 1.1rem;
+}
+
+.account-email p,
+.data-export p {
+  margin: 0 0 1rem;
+  color: #555;
+}
+
+.danger-zone h4 {
+  color: #f44336;
+}
+
+.danger-zone h4 svg {
+  margin-right: 0.5rem;
+}
+
+.danger-zone p {
+  margin: 0 0 1rem;
+  color: #555;
+}
+
+/* Delete Confirmation */
+.delete-confirmation {
+  background-color: #ffebee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.delete-confirm-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.delete-actions {
+  display: flex;
+  margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .settings-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tab-button.active::after {
+    height: 0;
+  }
+  
+  .delete-actions {
+    flex-direction: column;
+  }
+  
+  .delete-actions button {
+    margin: 0.5rem 0;
+  }
+  
+  .cancel-button {
+    margin-left: 0;
+  }
+} 
