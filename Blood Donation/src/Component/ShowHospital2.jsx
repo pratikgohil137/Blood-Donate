@@ -350,10 +350,7 @@ const ShowHospital2 = () => {
                         className="directions-btn"
                         title="Get directions to this hospital"
                       >
-                        <div className="directions-icon-wrapper">
-                          <FaMapMarkerAlt className="location-icon" />
-                          <FaHeart className="heart-icon" />
-                        </div>
+                        <FaMapMarkerAlt className="location-icon" />
                       </button>
                     </td>
                   </tr>

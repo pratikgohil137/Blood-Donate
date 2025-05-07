@@ -53,11 +53,8 @@ connectDB();
 // Setup default admin user if none exists
 const setupDefaultAdmin = async () => {
   try {
-    console.log('Checking for existing admin users...');
-    
     // Check if any admin exists
     const adminExists = await User.exists({ isAdmin: true });
-    console.log('Admin exists check result:', adminExists);
     
     if (!adminExists) {
       console.log('No admin found. Creating default admin user...');
@@ -80,8 +77,6 @@ const setupDefaultAdmin = async () => {
       await defaultAdmin.save();
       console.log('Default admin saved successfully');
       console.log('Default admin created with email: admin@blooddonation.com');
-    } else {
-      console.log('Admin user already exists.');
     }
   } catch (error) {
     console.error('Error in setupDefaultAdmin:', error);

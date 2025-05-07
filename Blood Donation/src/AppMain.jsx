@@ -25,7 +25,7 @@ import AdminSetup from './Component/AdminSetup';
 import HospitalDashboard from './Component/HospitalDashboard';
 import AwarenessSection from './Component/AwarenessSection';
 import BloodTypes from './Component/BloodTypes';
-import UserProfile from './Component/UserProfile';
+import UserProfile from './Component/UserProfile';j
 import AccountSettings from './Component/AccountSettings';
 import { AuthProvider } from './contexts/AuthContext';
 import AdminVerifyHospitals from './Component/AdminVerifyHospitals';

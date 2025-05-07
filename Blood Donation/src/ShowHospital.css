@@ -364,43 +364,21 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #e12454;
+  background-color: #d01142;
   color: white;
   border: none;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px rgba(225, 36, 84, 0.3);
-  position: relative;
-}
-
-.directions-icon-wrapper {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .location-icon {
-  position: absolute;
   font-size: 18px;
   color: white;
-  z-index: 1;
-}
-
-.heart-icon {
-  position: absolute;
-  font-size: 11px;
-  color: white;
-  top: -2px;
-  right: -2px;
-  z-index: 2;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
 }
 
 .directions-btn:hover {
-  background-color: #d01142;
+  background-color: #b20f3a;
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(225, 36, 84, 0.4);
 }
